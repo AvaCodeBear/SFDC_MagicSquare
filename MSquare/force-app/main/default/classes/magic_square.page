@@ -1,0 +1,13 @@
+<apex:page controller="msquare_controller">
+    <div style="text-align:center;font-size: 25px;">
+        <apex:outputText><h1>Random Magic Square</h1><br/></apex:outputText>
+        <apex:outputText>The Sum of Each Row, Column and Diagnol is {!m_magicNumber}</apex:outputText>
+        <apex:outputText value="{!m_Table}" escape="false" />
+        <br/><apex:outputText>Linear Equation: Y={!m_Slope}X + {!m_Const}</apex:outputText>
+        <br/><apex:outputText>Start X Value: {!m_StartVal}</apex:outputText>
+        <br/><apex:outputText>Number Rows: {!m_Rows}</apex:outputText>
+        <br/><apex:outputText>Rotated Right {!m_Rrotations} (AKA Rotated Left {!m_Lrotations})</apex:outputText>
+        <br/><apex:outputText>{!m_hFoldMessage}<br/>{!m_vFoldMessage}</apex:outputText>
+        <br/><apex:outputText>Refresh The Page (F5) To Generate a New Magic Square</apex:outputText>
+        </div>
+</apex:page>

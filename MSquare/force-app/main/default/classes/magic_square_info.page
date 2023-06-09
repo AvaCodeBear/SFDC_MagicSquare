@@ -1,0 +1,26 @@
+<apex:page>
+    <div style="text-align:center; font-size: 25px;">
+        <h1>Random Magic Square Generator</h1>
+    </div>
+    <div style="text-align:left; font-size: 25px; padding-left: 30px; padding-right: 30px;">
+        <apex:outputPanel >
+            Displays a Magic Square with a random number of rows using 
+            random parameters (number of rows, start value, slope and constant for sequencing function).  
+            <br/><br/>A Magic square is a square matrix of integers arranged such that the sum of each row, 
+            column and diagonal is the same.<br/><br/>Use the Visual Force tab "Random Magic Square" 
+            to display the page.<br/><br/>Note that this package is unmanaged, meaning the sources are 
+            included.  No warranty, either expressed or implied is given.  Install and run the code 
+            at your own risk.  It is <b>NOT</b> reccomended that this package be installed on a 
+            production organization.<br/><br/>No SOQL or SOSL operations are executed by this code 
+            and no organizational data is read or written.<br/><br/>Intended for Demonstration 
+            and Recreational purposes only.  The package contains the following components:
+        </apex:outputPanel>
+        <unorderedlist>
+            <li>magic_square.page - a VisualForcePage</li>
+            <li>Random Magic Square.tab - tab used to launch magic_square.page</li>
+            <li>msquare_controller.cls - the apex controller class for magic_square.page</li>
+            <li>msquare_controller_unit_test.cls - apex unit tests for msquare_controller.cls</li>
+            <li>magic_square_info.page - this informational page</li>
+        </unorderedlist>
+    </div>
+</apex:page>
